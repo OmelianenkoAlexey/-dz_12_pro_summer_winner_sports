@@ -27,41 +27,68 @@ console.log(winterSports);
 fruits = [];
 
 fruits = fruits.concat(winterSports.splice(2, 1));
-fruits = fruits.concat(summerSports.splice(2, 2))
+fruits = fruits.concat(summerSports.splice(2, 2));
 console.log(fruits);
 
 // 4. Вывести все элементы полученных массивов summer_sports, winter_sports, fruits в консоль в виде, который изображен на рисунке console.png.
 newWinterSports = [];
 for (i = 0; i < winterSports.length; i++) {
-    newWinterSports.push(`<p class="descriptiondz11">${winterSports[i].join(": ")}</p>`)
+    newWinterSports.push(`${winterSports[i].join(": ")}\n`)
 }
 
 newSummerSports = [];
 for (i = 0; i < summerSports.length; i++) {
-    newSummerSports.push(`<p class="descriptiondz11">${summerSports[i].join(": ")}</p>`)
+    newSummerSports.push(`${summerSports[i].join(": ")}\n`)
 }
 
 newFruits = [];
 for (i = 0; i < fruits.length; i++) {
-    newFruits.push(`<p class="descriptiondz11">${fruits[i].join(": ")}</p>`)
+    newFruits.push(`${fruits[i].join(": ")}\n`)
 }
 
-document.write(`
-<div class="itemdz11">
-<h1 class="titledz11">*** Winter Sports ***</h1>
+
+console.log(`
+*** Winter Sports ***
 ${newWinterSports.join("")}
-</div>
-
-<div class="itemdz11">
-<h1 class="titledz11">*** Summer Sports ***</h1>
+    
+*** Summer Sports *** 
 ${newSummerSports.join("")}
-</div>
-
-<div class="itemdz11">
-<h1 class="titledz11">*** Fruits ***</h1>
+    
+*** Fruits ***  
 ${newFruits.join("")}
-</div>
-`);
+`)
+
+// newWinterSports = [];
+// for (i = 0; i < winterSports.length; i++) {
+//     newWinterSports.push(`<p class="descriptiondz11">${winterSports[i].join(": ")}</p>`)
+// }
+
+// newSummerSports = [];
+// for (i = 0; i < summerSports.length; i++) {
+//     newSummerSports.push(`<p class="descriptiondz11">${summerSports[i].join(": ")}</p>`)
+// }
+
+// newFruits = [];
+// for (i = 0; i < fruits.length; i++) {
+//     newFruits.push(`<p class="descriptiondz11">${fruits[i].join(": ")}</p>`)
+// }
+
+// document.write(`
+// <div class="itemdz11">
+// <h1 class="titledz11">*** Winter Sports ***</h1>
+// ${newWinterSports.join("")}
+// </div>
+
+// <div class="itemdz11">
+// <h1 class="titledz11">*** Summer Sports ***</h1>
+// ${newSummerSports.join("")}
+// </div>
+
+// <div class="itemdz11">
+// <h1 class="titledz11">*** Fruits ***</h1>
+// ${newFruits.join("")}
+// </div>
+// `);
 
 
 
