@@ -56,7 +56,7 @@ ${newSummerSports.join("")}
     
 *** Fruits ***  
 ${newFruits.join("")}
-`)
+`);
 
 // newWinterSports = [];
 // for (i = 0; i < winterSports.length; i++) {
