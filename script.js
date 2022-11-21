@@ -31,32 +31,54 @@ fruits = fruits.concat(summerSports.splice(2, 2));
 console.log(fruits);
 
 // 4. Вывести все элементы полученных массивов summer_sports, winter_sports, fruits в консоль в виде, который изображен на рисунке console.png.
-newWinterSports = [];
-for (i = 0; i < winterSports.length; i++) {
-    newWinterSports.push(`${winterSports[i].join(": ")}\n`)
+
+console.log("");
+console.log("*** Winter ***");
+for(i = 0; i < winterSports.length; i++) {
+console.log(winterSports[i].join(": "));
 }
 
-newSummerSports = [];
-for (i = 0; i < summerSports.length; i++) {
-    newSummerSports.push(`${summerSports[i].join(": ")}\n`)
+console.log("");
+console.log("*** Summer ***");
+for(i = 0; i < summerSports.length; i++) {
+console.log(summerSports[i].join(": "));
 }
 
-newFruits = [];
-for (i = 0; i < fruits.length; i++) {
-    newFruits.push(`${fruits[i].join(": ")}\n`)
+console.log("");
+console.log("*** Fruits ***");
+for(i = 0; i < fruits.length; i++) {
+console.log(fruits[i].join(": "));
 }
 
+// Способ 2!!!!!!!!!!!!
 
-console.log(`
-*** Winter Sports ***
-${newWinterSports.join("")}
+// newWinterSports = [];
+// for (i = 0; i < winterSports.length; i++) {
+//     newWinterSports.push(`${winterSports[i].join(": ")}\n`)
+// }
+
+// newSummerSports = [];
+// for (i = 0; i < summerSports.length; i++) {
+//     newSummerSports.push(`${summerSports[i].join(": ")}\n`)
+// }
+
+// newFruits = [];
+// for (i = 0; i < fruits.length; i++) {
+//     newFruits.push(`${fruits[i].join(": ")}\n`)
+// }
+
+// console.log(`
+// *** Winter Sports ***
+// ${newWinterSports.join("")}
     
-*** Summer Sports *** 
-${newSummerSports.join("")}
+// *** Summer Sports *** 
+// ${newSummerSports.join("")}
     
-*** Fruits ***  
-${newFruits.join("")}
-`);
+// *** Fruits ***  
+// ${newFruits.join("")}
+// `);
+
+// Способ 3!!!!!!!!!!!
 
 // newWinterSports = [];
 // for (i = 0; i < winterSports.length; i++) {
